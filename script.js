@@ -1,27 +1,31 @@
 //UPPGIFT 2:
 {
-    var message = "Hello, World!";
+    //console.log här skrivier ut alla.
+    var message = "Hej, Världen!";
+    console.log(message);
 
     let car = "Volvo";
-  
+    console.log(car);
+
     const food = "Pizza";
+    console.log(food);
 
 }
 
 /* 
 UPPGIFT 2:
 
-1. hur dessa skiljer sig är: var kan du nå "överallt" typ men dem andra går inte efter som att dem befinner sig i ett block scope. detta ser man tydligt när man försöker kalla på dessa olika varibler med console.log även fast inget skrivs ut kan vi se att de nås.
+1. hur dessa skiljer sig är: var kan du nå VAR "överallt" typ men dem andra går inte efter som att dem befinner sig i ett block scope. detta ser man tydligt när man försöker kalla på dessa olika varibler med console.log även fast inget skrivs ut kan vi se att VAR nås, men är undefinie.
 2. 
-Före:
+Console.log Före blocket:
 var undefined
 let ReferenceError: car is not defined
 const ReferenceError: food is not defined
 
-inuti blocket:
+console.log inuti blocket:
 alla tre skriver ut sina värden.
 
-Efter:
+console.log Efter blocket:
 var skriver ut sitt värde
 let ReferenceError: car is not defined
 const ReferenceError: food is not defined
@@ -64,10 +68,10 @@ let name = "Erik";
 
 function greet(name){
     console.log(name);
- return "Hello, " + name;
+ return "Hej, " + name;
 }
 
-console.log(name); 
+//console.log(name); 
 console.log(greet("Miakela"));
 
 
@@ -77,7 +81,7 @@ UPPGIFT 4:
 1. 
 funktionsdeklaration: är det klassiska sättet att deklarera en funtion, man skriver ncykelordet funtion sedan namn och dess parametrar.
 funktionsuttryck: är när man skapar en funtion och sätter den till en variabel, så att man deklararer en variabel som är lika med en namnlös funktion med dess parametrar.
-arrowfunction: är lite som funktionsuttryck men att man skriver den lite annorlunda så att vi inte behöver nyckelordet funtion utan kan istället skriva ut en parameter följt av => och sedan måsvingar. lite nyare
+arrowfunction: är lite som funktionsuttryck men att man skriver den lite annorlunda så att vi inte behöver nyckelordet funtion utan kan istället skriva ut en parameter följt av => och sedan måsvingar. lite modernare.
 
 varför jag valde att skriva min kod med funktionsdeklaration är för att jag är mest van med det sättet, sedan tycker jag att det är enklare att läsa av, specielt för denna uppggift.
 
@@ -86,7 +90,7 @@ funktionsdeklaration: denna kan du anropa raden innan den ens är deklarerad.
 funktionsuttryck och arrowfunction:  dessa kan du inte anropa innan, dem måste deklareras först.
 
 3. skulle vi ändra variabeln utanför funktionen till vad som helst och anropa den utanför funktioen skulle vi få ut de värdet vi tilldelade den. Just nu har jag värdet Erik, men kunde lika gärna vart Kalle.
-samma sak gäller om vi skulle anropa i funktionen men en conlsole.log av name parametern, sen en console.log av det namnet vi vill "greet"
+samma sak gäller om vi anropar funktionen med en console.log(greet("namnet vi ville ha")), då så skulle vi få ut hej Miakela i detta fall eftersom att argumentet vi skickar in till funktionen är Miakela, men vi skulle kunna byta ut det till vad som helst. 
 
 4.
 paramenter: är själva variabeln som finns i funktionen, som i detta fall name
