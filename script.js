@@ -1,4 +1,9 @@
 //UPPGIFT 2:
+
+//funkar ej här
+//console.log(message);
+//console.log(car);
+//console.log(food);
 {
     //console.log här skrivier ut alla.
     var message = "Hej, Världen!";
@@ -11,6 +16,10 @@
     console.log(food);
 
 }
+
+//console.log(message); skriver ut Hej, Världen!
+//console.log(car); //funkar ej här
+//console.log(food); //funkar ej här
 
 /* 
 UPPGIFT 2:
